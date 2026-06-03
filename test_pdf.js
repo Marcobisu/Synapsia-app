@@ -1,4 +1,4 @@
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
-const { PDFParse } = require('pdf-parse');
-console.log('PDFParse:', typeof PDFParse, PDFParse);
+const pdfParse = require('pdf-parse-fork');
+console.log('pdfParse:', typeof pdfParse, pdfParse);

@@ -2,19 +2,15 @@ import express from 'express';
 import multer from 'multer';
 import fs from 'fs';
 import { createRequire } from 'module';
-
-// Polyfill for Vercel Serverless environment where DOMMatrix is missing
-globalThis.DOMMatrix = globalThis.DOMMatrix || class DOMMatrix {};
-
 const require = createRequire(import.meta.url);
-const { PDFParse } = require('pdf-parse');
+const pdfParse = require('pdf-parse-fork');
 import { runQuery, getRow, getAllRows } from '../database/db.js';
 import { verifyToken } from '../middleware/authMiddleware.js';
 import { validateAnalyzeText } from '../middleware/validationMiddleware.js';
 import { analyzeContent } from '../ai.js';
 
 const router = express.Router();
-const upload = multer({ dest: 'uploads/' });
+const upload = multer({ storage: multer.memoryStorage() });
 
 /**
  * POST /api/analyze - Upload PDF and analyze it (Protected)
@@ -25,21 +21,15 @@ router.post('/analyze', verifyToken, upload.single('file'), async (req, res) => 
             return res.status(400).json({ error: 'Nessun file caricato' });
         }
 
-        const filePath = req.file.path;
-        const dataBuffer = fs.readFileSync(filePath);
+        const dataBuffer = req.file.buffer;
 
         let text = '';
         if (req.file.originalname.endsWith('.pdf')) {
-            const parser = new PDFParse({ data: dataBuffer });
-            const result = await parser.getText();
+            const result = await pdfParse(dataBuffer);
             text = result.text;
-            await parser.destroy();
         } else {
             text = dataBuffer.toString('utf-8');
         }
-
-        // Clean up uploaded file
-        fs.unlinkSync(filePath);
 
         if (!text.trim()) {
             return res.status(400).json({ error: 'Nessun testo estratto dal file' });
