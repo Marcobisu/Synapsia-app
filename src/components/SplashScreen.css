@@ -1,0 +1,117 @@
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1a1a1d; /* Solid matching dark backdrop */
+    background-image: radial-gradient(circle at center, #242528 0%, #161619 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.splash-screen.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.splash-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+}
+
+.splash-logo {
+    filter: drop-shadow(0 0 15px rgba(212, 163, 115, 0.2));
+    animation: pulseLogo 2s ease-in-out infinite;
+}
+
+.logo-s-path {
+    stroke-dasharray: 40;
+    stroke-dashoffset: 40;
+    animation: drawS 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.splash-glow {
+    position: absolute;
+    top: 30px;
+    width: 120px;
+    height: 120px;
+    background: var(--accent-color, #d4a373);
+    filter: blur(50px);
+    opacity: 0.15;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: pulseGlow 2s ease-in-out infinite;
+}
+
+.splash-loader-bar {
+    width: 140px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.splash-loader-progress {
+    height: 100%;
+    width: 0%;
+    background: var(--accent-color, #d4a373);
+    border-radius: 1px;
+    animation: loadBar 1.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.splash-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: var(--accent-color);
+    opacity: 0;
+    animation: fadeInTitle 0.8s ease-out 0.6s forwards;
+}
+
+@keyframes drawS {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes pulseLogo {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        opacity: 0.15;
+    }
+    50% {
+        opacity: 0.25;
+    }
+}
+
+@keyframes loadBar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes fadeInTitle {
+    to {
+        opacity: 1;
+    }
+}

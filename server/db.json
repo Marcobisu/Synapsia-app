@@ -1,0 +1,387 @@
+{
+  "1779954495900": {
+    "id": "1779954495900",
+    "name": "Marketing",
+    "conceptMap": {
+      "macroTopics": [
+        "Fondamenti",
+        "Struttura ed Esempi"
+      ],
+      "nodes": [
+        {
+          "id": "concept_0",
+          "label": "Summary",
+          "macroTopic": "Fondamenti",
+          "type": "hub",
+          "abstractionLevel": 5,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_1",
+          "label": "Product",
+          "macroTopic": "Struttura ed Esempi",
+          "type": "hub",
+          "abstractionLevel": 5,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_2",
+          "label": "Cycle",
+          "macroTopic": "Fondamenti",
+          "type": "intermediate",
+          "abstractionLevel": 3,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_3",
+          "label": "Characteristics",
+          "macroTopic": "Fondamenti",
+          "type": "intermediate",
+          "abstractionLevel": 3,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_4",
+          "label": "Objectives",
+          "macroTopic": "Struttura ed Esempi",
+          "type": "hub",
+          "abstractionLevel": 5,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_5",
+          "label": "Strategies",
+          "macroTopic": "Struttura ed Esempi",
+          "type": "leaf",
+          "abstractionLevel": 1,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_6",
+          "label": "Nella",
+          "macroTopic": "Struttura ed Esempi",
+          "type": "leaf",
+          "abstractionLevel": 1,
+          "description": "Nella fase iniziale di introduzione, il prodotto ha un’offerta di base..."
+        }
+      ],
+      "edges": [
+        {
+          "from": "concept_0",
+          "to": "concept_1",
+          "type": "inter",
+          "description": "Collegamento logico tra Summary e Product."
+        },
+        {
+          "from": "concept_1",
+          "to": "concept_2",
+          "type": "inter",
+          "description": "Collegamento logico tra Product e Cycle."
+        },
+        {
+          "from": "concept_2",
+          "to": "concept_3",
+          "type": "intra",
+          "description": "Collegamento logico tra Cycle e Characteristics."
+        },
+        {
+          "from": "concept_3",
+          "to": "concept_4",
+          "type": "inter",
+          "description": "Collegamento logico tra Characteristics e Objectives."
+        },
+        {
+          "from": "concept_4",
+          "to": "concept_5",
+          "type": "intra",
+          "description": "Collegamento logico tra Objectives e Strategies."
+        },
+        {
+          "from": "concept_5",
+          "to": "concept_6",
+          "type": "intra",
+          "description": "Collegamento logico tra Strategies e Nella."
+        },
+        {
+          "from": "concept_0",
+          "to": "concept_3",
+          "type": "inter",
+          "description": "Correlazione trasversale tra Summary e Characteristics."
+        }
+      ]
+    },
+    "completedNodes": [
+      "concept_0"
+    ],
+    "completedEdges": [],
+    "answers": {
+      "concept_0": {
+        "original": "il sommario è un documento che riassume i capitoli di un libro o comunque un testo ",
+        "revised": "Summary: Summary of Product Life-Cycle Characteristics, Objectives, and Strategies... (Sintesi: il sommario è un documento che riassume i capitoli di un libro o comunque un testo )",
+        "evaluation": "correct"
+      }
+    },
+    "edgeAnswers": {},
+    "activeQuestion": null
+  },
+  "1779996934715": {
+    "id": "1779996934715",
+    "name": "Marketing Aloini",
+    "conceptMap": {
+      "macroTopics": [
+        "Fondamenti",
+        "Struttura ed Esempi"
+      ],
+      "nodes": [
+        {
+          "id": "concept_0",
+          "label": "Summary",
+          "macroTopic": "Fondamenti",
+          "type": "hub",
+          "abstractionLevel": 5,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_1",
+          "label": "Product",
+          "macroTopic": "Struttura ed Esempi",
+          "type": "hub",
+          "abstractionLevel": 5,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_2",
+          "label": "Cycle",
+          "macroTopic": "Fondamenti",
+          "type": "intermediate",
+          "abstractionLevel": 3,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_3",
+          "label": "Characteristics",
+          "macroTopic": "Fondamenti",
+          "type": "intermediate",
+          "abstractionLevel": 3,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_4",
+          "label": "Objectives",
+          "macroTopic": "Struttura ed Esempi",
+          "type": "hub",
+          "abstractionLevel": 5,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_5",
+          "label": "Strategies",
+          "macroTopic": "Struttura ed Esempi",
+          "type": "leaf",
+          "abstractionLevel": 1,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_6",
+          "label": "Nella",
+          "macroTopic": "Struttura ed Esempi",
+          "type": "leaf",
+          "abstractionLevel": 1,
+          "description": "Nella fase iniziale di introduzione, il prodotto ha un’offerta di base..."
+        }
+      ],
+      "edges": [
+        {
+          "from": "concept_0",
+          "to": "concept_1",
+          "type": "inter",
+          "description": "Collegamento logico tra Summary e Product."
+        },
+        {
+          "from": "concept_1",
+          "to": "concept_2",
+          "type": "inter",
+          "description": "Collegamento logico tra Product e Cycle."
+        },
+        {
+          "from": "concept_2",
+          "to": "concept_3",
+          "type": "intra",
+          "description": "Collegamento logico tra Cycle e Characteristics."
+        },
+        {
+          "from": "concept_3",
+          "to": "concept_4",
+          "type": "inter",
+          "description": "Collegamento logico tra Characteristics e Objectives."
+        },
+        {
+          "from": "concept_4",
+          "to": "concept_5",
+          "type": "intra",
+          "description": "Collegamento logico tra Objectives e Strategies."
+        },
+        {
+          "from": "concept_5",
+          "to": "concept_6",
+          "type": "intra",
+          "description": "Collegamento logico tra Strategies e Nella."
+        },
+        {
+          "from": "concept_0",
+          "to": "concept_3",
+          "type": "inter",
+          "description": "Correlazione trasversale tra Summary e Characteristics."
+        }
+      ]
+    },
+    "completedNodes": [],
+    "completedEdges": [],
+    "answers": {},
+    "edgeAnswers": {},
+    "activeQuestion": {
+      "completed": false,
+      "type": "node",
+      "nodeId": "concept_0",
+      "nodeLabel": "Summary",
+      "nodeType": "hub",
+      "macroTopic": "Fondamenti",
+      "introduction": "Andiamo avanti in \"Fondamenti\"...",
+      "question": "Spiega in dettaglio il concetto di \"Summary\" in base a quanto ricordi e ai collegamenti logici.",
+      "progress": 0,
+      "currentIndex": 0,
+      "totalNodes": 7
+    }
+  },
+  "1780041343836": {
+    "id": "1780041343836",
+    "name": "analisi 1",
+    "conceptMap": {
+      "macroTopics": [
+        "Fondamenti",
+        "Struttura ed Esempi"
+      ],
+      "nodes": [
+        {
+          "id": "concept_0",
+          "label": "Summary",
+          "macroTopic": "Fondamenti",
+          "type": "hub",
+          "abstractionLevel": 5,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_1",
+          "label": "Product",
+          "macroTopic": "Struttura ed Esempi",
+          "type": "hub",
+          "abstractionLevel": 5,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_2",
+          "label": "Cycle",
+          "macroTopic": "Fondamenti",
+          "type": "intermediate",
+          "abstractionLevel": 3,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_3",
+          "label": "Characteristics",
+          "macroTopic": "Fondamenti",
+          "type": "intermediate",
+          "abstractionLevel": 3,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_4",
+          "label": "Objectives",
+          "macroTopic": "Struttura ed Esempi",
+          "type": "hub",
+          "abstractionLevel": 5,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_5",
+          "label": "Strategies",
+          "macroTopic": "Struttura ed Esempi",
+          "type": "leaf",
+          "abstractionLevel": 1,
+          "description": "Summary of Product Life-Cycle Characteristics, Objectives, and Strategies..."
+        },
+        {
+          "id": "concept_6",
+          "label": "Nella",
+          "macroTopic": "Struttura ed Esempi",
+          "type": "leaf",
+          "abstractionLevel": 1,
+          "description": "Nella fase iniziale di introduzione, il prodotto ha un’offerta di base..."
+        }
+      ],
+      "edges": [
+        {
+          "from": "concept_0",
+          "to": "concept_1",
+          "type": "inter",
+          "description": "Collegamento logico tra Summary e Product."
+        },
+        {
+          "from": "concept_1",
+          "to": "concept_2",
+          "type": "inter",
+          "description": "Collegamento logico tra Product e Cycle."
+        },
+        {
+          "from": "concept_2",
+          "to": "concept_3",
+          "type": "intra",
+          "description": "Collegamento logico tra Cycle e Characteristics."
+        },
+        {
+          "from": "concept_3",
+          "to": "concept_4",
+          "type": "inter",
+          "description": "Collegamento logico tra Characteristics e Objectives."
+        },
+        {
+          "from": "concept_4",
+          "to": "concept_5",
+          "type": "intra",
+          "description": "Collegamento logico tra Objectives e Strategies."
+        },
+        {
+          "from": "concept_5",
+          "to": "concept_6",
+          "type": "intra",
+          "description": "Collegamento logico tra Strategies e Nella."
+        },
+        {
+          "from": "concept_0",
+          "to": "concept_3",
+          "type": "inter",
+          "description": "Correlazione trasversale tra Summary e Characteristics."
+        }
+      ]
+    },
+    "completedNodes": [],
+    "completedEdges": [],
+    "answers": {},
+    "edgeAnswers": {},
+    "activeQuestion": {
+      "completed": false,
+      "type": "node",
+      "nodeId": "concept_0",
+      "nodeLabel": "Summary",
+      "nodeType": "hub",
+      "macroTopic": "Fondamenti",
+      "introduction": "Andiamo avanti in \"Fondamenti\"...",
+      "question": "Spiega in dettaglio il concetto di \"Summary\" in base a quanto ricordi e ai collegamenti logici.",
+      "attempts": 0,
+      "previousAnswers": [],
+      "progress": 0,
+      "currentIndex": 0,
+      "totalNodes": 7
+    }
+  }
+}

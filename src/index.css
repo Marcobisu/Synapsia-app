@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Base Typography */
+  font-family: 'Outfit', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Premium Light Glass Theme - Default: Calcite */
+  --bg-main: #f8f9fa;
+  --bg-sidebar: #ffffff;
+  --bg-surface: rgba(255, 255, 255, 0.85);
+  --bg-surface-hover: rgba(255, 255, 255, 0.95);
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --border-color: rgba(0, 0, 0, 0.08);
+  
+  /* Background gradients */
+  --bg-gradient-start: #fbfaf8;
+  --bg-gradient-end: #f2efe9;
+  
+  /* Map Colors - Gold / Bronze for connections */
+  --node-hub: #c49b6d;
+  --node-intermediate: #d8bfa5;
+  --node-leaf: #f0e5d8;
+  --edge-color: rgba(212, 163, 115, 0.25);
+  
+  /* Accent - Bronze/Gold tone for selections */
+  --accent-color: #d4a373;
+  --accent-hover: #b07d4b;
+  --success-color: #40c057;
+  --error-color: #fa5252;
+
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== ATMOSPHERES & THEMES ===== */
+
+/* Calcite - Slate Gold */
+[data-theme="calcite"] {
+  --bg-main: #f8f9fa;
+  --bg-sidebar: #ffffff;
+  --bg-surface: rgba(255, 255, 255, 0.85);
+  --bg-surface-hover: rgba(255, 255, 255, 0.95);
+  --bg-gradient-start: #fbfaf8;
+  --bg-gradient-end: #f2efe9;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --accent-color: #d4a373;
+  --accent-hover: #b07d4b;
+  --node-hub: #c49b6d;
+  --node-intermediate: #d8bfa5;
+  --node-leaf: #f0e5d8;
+  --edge-color: rgba(212, 163, 115, 0.25);
+}
+
+/* Abisso - Cyber Blue */
+[data-theme="abisso"] {
+  --bg-main: #f0f4f8;
+  --bg-sidebar: #ffffff;
+  --bg-surface: rgba(255, 255, 255, 0.85);
+  --bg-surface-hover: rgba(255, 255, 255, 0.95);
+  --bg-gradient-start: #f3f7fa;
+  --bg-gradient-end: #e2ecf5;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --accent-color: #4a7ca1;
+  --accent-hover: #2f5673;
+  --node-hub: #4a7ca1;
+  --node-intermediate: #8cb2cc;
+  --node-leaf: #d0e1ed;
+  --edge-color: rgba(74, 124, 161, 0.25);
+}
+
+/* Ambra - Warm Copper */
+[data-theme="ambra"] {
+  --bg-main: #faf7f5;
+  --bg-sidebar: #ffffff;
+  --bg-surface: rgba(255, 255, 255, 0.85);
+  --bg-surface-hover: rgba(255, 255, 255, 0.95);
+  --bg-gradient-start: #fcfaf9;
+  --bg-gradient-end: #f5ede6;
+  --text-primary: #3c2f2f;
+  --text-secondary: #7c6a5f;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --accent-color: #b06d4b;
+  --accent-hover: #8f5030;
+  --node-hub: #b06d4b;
+  --node-intermediate: #cca28c;
+  --node-leaf: #f0dfd5;
+  --edge-color: rgba(176, 109, 75, 0.25);
+}
+
+/* Foresta - Deep Emerald */
+[data-theme="foresta"] {
+  --bg-main: #f2f6f3;
+  --bg-sidebar: #ffffff;
+  --bg-surface: rgba(255, 255, 255, 0.85);
+  --bg-surface-hover: rgba(255, 255, 255, 0.95);
+  --bg-gradient-start: #f5faf6;
+  --bg-gradient-end: #e3ece6;
+  --text-primary: #1e2922;
+  --text-secondary: #5c7365;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --accent-color: #4a8060;
+  --accent-hover: #2e573e;
+  --node-hub: #4a8060;
+  --node-intermediate: #8cbd9f;
+  --node-leaf: #cee8d9;
+  --edge-color: rgba(74, 128, 96, 0.25);
+}
+
+/* Lavanda - Amethyst Violet */
+[data-theme="lavanda"] {
+  --bg-main: #f5f3f7;
+  --bg-sidebar: #ffffff;
+  --bg-surface: rgba(255, 255, 255, 0.85);
+  --bg-surface-hover: rgba(255, 255, 255, 0.95);
+  --bg-gradient-start: #faf7fc;
+  --bg-gradient-end: #e7e3ed;
+  --text-primary: #2e203c;
+  --text-secondary: #6b5c7b;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --accent-color: #7d639c;
+  --accent-hover: #5c4578;
+  --node-hub: #7d639c;
+  --node-intermediate: #b3a1cc;
+  --node-leaf: #ebdff5;
+  --edge-color: rgba(125, 99, 156, 0.25);
+}
+
+/* Cemento - Platinum Chrome */
+[data-theme="cemento"] {
+  --bg-main: #f3f3f5;
+  --bg-sidebar: #ffffff;
+  --bg-surface: rgba(255, 255, 255, 0.85);
+  --bg-surface-hover: rgba(255, 255, 255, 0.95);
+  --bg-gradient-start: #fafafb;
+  --bg-gradient-end: #e6e6ea;
+  --text-primary: #1f1f21;
+  --text-secondary: #6c6c75;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --accent-color: #757580;
+  --accent-hover: #53535c;
+  --node-hub: #757580;
+  --node-intermediate: #a6a6b2;
+  --node-leaf: #e3e3e8;
+  --edge-color: rgba(117, 117, 128, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-main);
+  background-image: radial-gradient(circle at top right, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-panel-hover:hover {
+  background: var(--bg-surface-hover);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Base Buttons */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-hover) 100%);
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.btn-secondary {
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+.btn-secondary:hover {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: var(--accent-color);
+  transform: translateY(-1px);
+}
+
+/* Scrollbar styling for light mode */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* High-Fidelity Mascot Animations */
+.blobb-mascot-container {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: bottom center;
+}
+
+.blobb-state-idle .blobb-mascot-wrapper {
+    animation: blobb-float 4s ease-in-out infinite, blobb-breathe 3s ease-in-out infinite;
+}
+
+.blobb-state-curious .blobb-mascot-wrapper {
+    animation: blobb-tilt-forward 0.5s forwards;
+}
+
+.blobb-state-dance .blobb-mascot-wrapper {
+    animation: blobb-dance 1.2s ease-in-out infinite;
+}
+
+.blobb-state-amazed .blobb-mascot-wrapper {
+    animation: blobb-amaze-pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.blobb-state-skeptical .blobb-mascot-wrapper {
+    animation: blobb-skeptical-tilt 0.5s forwards;
+}
+
+.blobb-state-yawning .blobb-mascot-wrapper {
+    animation: blobb-yawn-squish 1.2s forwards;
+}
+
+@keyframes blobb-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+@keyframes blobb-breathe {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.03, 0.97); }
+}
+
+@keyframes blobb-tilt-forward {
+    0% { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(10deg) scale(1.05); }
+}
+
+@keyframes blobb-skeptical-tilt {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-12deg); }
+}
+
+@keyframes blobb-dance {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-15px) rotate(-8deg) scaleX(1.03); }
+    50% { transform: translateY(0) rotate(4deg) scaleY(0.97); }
+    75% { transform: translateY(-10px) rotate(8deg) scaleX(0.97); }
+}
+
+@keyframes blobb-amaze-pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15) translateY(-8px); }
+    100% { transform: scale(1.08); }
+}
+
+@keyframes blobb-yawn-squish {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05, 0.8) translateY(12px); }
+    100% { transform: scale(1); }
+}
