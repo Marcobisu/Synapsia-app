@@ -2,6 +2,10 @@ import express from 'express';
 import multer from 'multer';
 import fs from 'fs';
 import { createRequire } from 'module';
+
+// Polyfill for Vercel Serverless environment where DOMMatrix is missing
+globalThis.DOMMatrix = globalThis.DOMMatrix || class DOMMatrix {};
+
 const require = createRequire(import.meta.url);
 const { PDFParse } = require('pdf-parse');
 import { runQuery, getRow, getAllRows } from '../database/db.js';
